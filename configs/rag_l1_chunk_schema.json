@@ -1,0 +1,32 @@
+{
+  "version": "K5",
+  "description": "Expected JSONL handoff schema from rag-lc L1 chunking_v2 to rag-to-kaggle.",
+  "input_file_default": "data/l1_incoming/l1_chunks.jsonl",
+  "output_dir_default": "data/l1_import",
+  "required_input_fields": [
+    "doc_id",
+    "text"
+  ],
+  "recommended_input_fields": [
+    "chunk_id",
+    "title",
+    "source",
+    "source_type",
+    "chunk_index",
+    "char_count",
+    "token_estimate",
+    "chunking_method",
+    "sanitized",
+    "origin_pipeline",
+    "content_hash",
+    "metadata"
+  ],
+  "output_schema": "K2",
+  "default_values": {
+    "source_type": "local_file",
+    "chunking_method": "chunking_v2",
+    "sanitized": true,
+    "origin_pipeline": "rag_lc_l1_chunking_v2"
+  },
+  "default_collection": "rag_kaggle_l1_chunking_sandbox"
+}

@@ -47,3 +47,9 @@ chroma_db/
 
 # logs
 *.log
+
+# rag-lc L1 handoff artifacts
+data/l1_incoming/*
+!data/l1_incoming/.gitkeep
+data/l1_import/*
+!data/l1_import/.gitkeep

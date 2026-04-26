@@ -1,0 +1,2 @@
+{"query":"Apa tujuan chunking v2?","expected_terms":["heading","paragraf","konteks semantik","retrieval"],"expected_doc_id":"l1_demo_001","expected_source":"demo_l1.txt","expected_chunk_index":0,"expected_section_title":"Tujuan Chunking V2"}
+{"query":"Apakah hasil chunking v2 boleh langsung masuk Chroma utama?","expected_terms":["tidak langsung","Chroma utama","dinormalisasi","Chroma sandbox"],"expected_doc_id":"l1_demo_001","expected_source":"demo_l1.txt","expected_chunk_index":1,"expected_section_title":"Alur Validasi"}
