@@ -1,0 +1,6 @@
+model_name: intfloat/multilingual-e5-small
+query_prefix: "query:"
+passage_prefix: "passage:"
+normalize_embeddings: true
+batch_size: 32
+device: auto

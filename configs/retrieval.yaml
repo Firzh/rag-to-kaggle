@@ -1,0 +1,4 @@
+top_k_initial: 10
+top_k_final: 4
+use_reranker: false
+similarity_metric: cosine

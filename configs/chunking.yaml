@@ -1,0 +1,5 @@
+chunk_size: 700
+chunk_overlap: 120
+split_by: paragraph
+preserve_headings: true
+min_chunk_chars: 120
