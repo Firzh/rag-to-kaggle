@@ -1,0 +1,3 @@
+{"query": "Apa fungsi Kaggle dalam pipeline RAG lokal?", "expected_terms": ["Kaggle", "eksperimen", "chunking", "retrieval"], "expected_doc_id": "c12989af53c14ef0", "expected_source": "contoh_rag.txt"}
+{"query": "Apa fungsi ChromaDB?", "expected_terms": ["ChromaDB", "vector database", "lokal"], "expected_doc_id": "c12989af53c14ef0", "expected_source": "contoh_rag.txt"}
+{"query": "Apakah Gemini dipakai pada tahap awal?", "expected_terms": ["Gemini", "belum digunakan", "tahap awal"], "expected_doc_id": "c12989af53c14ef0", "expected_source": "contoh_rag.txt"}
