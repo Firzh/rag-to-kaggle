@@ -1,0 +1,25 @@
+{
+  "version": "K3",
+  "modes": {
+    "smoke-kaggle-embedding": {
+      "description": "Import embeddings.npy from Kaggle for storage smoke test only.",
+      "required_files": [
+        "cleaned_chunks.parquet",
+        "metadata.jsonl",
+        "embeddings.npy"
+      ],
+      "default_collection": "rag_kaggle_tfidf_smoke_k3",
+      "final_use": false
+    },
+    "local-embedding": {
+      "description": "Use Kaggle cleaned chunks and metadata, then build embeddings locally.",
+      "required_files": [
+        "cleaned_chunks.parquet",
+        "metadata.jsonl"
+      ],
+      "default_collection": "rag_kaggle_local_embed_sandbox_k3",
+      "default_embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "final_use": true
+    }
+  }
+}
