@@ -1,0 +1,52 @@
+{
+  "version": "K2",
+  "description": "Standard schema for Kaggle cleaned/chunked RAG output before local embedding.",
+  "required_files": [
+    "cleaned_chunks.parquet",
+    "metadata.jsonl",
+    "retrieval_score.csv",
+    "evaluation_report.md"
+  ],
+  "optional_files": [
+    "embeddings.npy"
+  ],
+  "cleaned_chunks_required_columns": {
+    "chunk_id": "string",
+    "doc_id": "string",
+    "title": "string",
+    "source": "string",
+    "source_type": "string",
+    "chunk_index": "integer",
+    "text": "string",
+    "char_count": "integer",
+    "token_estimate": "integer",
+    "chunking_method": "string",
+    "sanitized": "boolean",
+    "origin_pipeline": "string",
+    "content_hash": "string"
+  },
+  "allowed_source_type": [
+    "local_file",
+    "web",
+    "chroma_export",
+    "dummy",
+    "unknown"
+  ],
+  "allowed_origin_pipeline": [
+    "kaggle_cleaning",
+    "kaggle_chunking",
+    "local_sanitize",
+    "web_staging",
+    "chroma_export",
+    "unknown"
+  ],
+  "rules": {
+    "chunk_id_unique": true,
+    "text_not_empty": true,
+    "doc_id_not_empty": true,
+    "source_not_empty": true,
+    "metadata_row_count_equals_chunks": true,
+    "metadata_order_matches_chunks": true,
+    "sanitized_must_be_true": true
+  }
+}

@@ -13,3 +13,37 @@ outputs/*
 !data/export/.gitkeep
 !data/import/.gitkeep
 !outputs/.gitkeep
+
+# rag-to-kaggle generated artifacts
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# local generated data
+data/raw/*
+!data/raw/.gitkeep
+data/sanitized/*
+!data/sanitized/.gitkeep
+data/export/*
+!data/export/.gitkeep
+data/import/*
+!data/import/.gitkeep
+
+# generated outputs
+outputs/*
+!outputs/.gitkeep
+
+# local vector database
+chroma_db/
+
+# Kaggle / vector artifacts
+*.npy
+*.parquet
+*.pre_k2.bak
+
+# logs
+*.log
